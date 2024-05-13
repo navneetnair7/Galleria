@@ -46,8 +46,10 @@ export default function RootLayout({
         />
         <body className="flex flex-col gap-4">
           <TopNav />
-          {children}
-          {modal}
+          <div>
+            {children}
+            {modal}
+          </div>
           <div id="modal-root" />
         </body>
       </html>
